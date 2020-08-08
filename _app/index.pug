@@ -14,12 +14,13 @@
 -var footer_title = true
 -var oferta = 'https://mastervision.su/oferta.docx'
 //- https://shop.mastervision.su/?r=ordering/cart/as1&id=5254&clean=true&lg=ru
+-var href = "#prices"
 
 mixin gt(cl,h3)
 	h3.general-title(class=cl)=h3
 mixin b(cl,href,p,blank,id)
-	.button-wrapper
-		a.button(class=cl href=href target=target id=id)=p
+	.button-wrapper(class=cl)
+		a.button(href=href target=target id=id)=p
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -28,6 +29,7 @@ html(lang="ru")
 		include pug/scripts/head_scripts
 	body
 		include pug/scripts/body_top_scripts
+		+b('','#!','Мне это необходимо')
 		include pug/main/1-main
 		include pug/main/2-about
 		include pug/main/3-for
