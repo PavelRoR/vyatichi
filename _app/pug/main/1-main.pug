@@ -1,0 +1,32 @@
+mixin sp(cl,src,p)
+	.main-speaker(class=cl)
+		img(src=path+"img/images/"+src, alt=p).main-speaker-img
+		p.main-speaker-text=p
+
+section#main
+	.container
+		.row
+			.col-md-6
+				p.main-flytext Вятичи
+				h1.main-title Мастерская Master Vision
+				h2.main-subtitle ПРОКАЧАЕМ ТВОИ SOFT SKILLS ЗА 5 ДНЕЙ: 
+					small навыки успешного человека
+				p.main-info Даты проведения: 
+					span с 25 сентября по 1 октября
+				+b('button-main',href,'Записаться сейчас')
+			.col-md-6
+				.main-img
+					img(src=path+"img/images/target.png", alt="Мишень")
+		.main-speakers
+			.main-speakers-row
+				+sp('main-speaker-1','janna-main.png','Жанна Абрамова')
+				+sp('main-speaker-2','isakov-main.png','Илья Исаков')
+				+sp('main-speaker-3','granik-main.png','Кристина Граник')
+				+sp('main-speaker-4','skutskaya-main.png','Анна Скуцкая')
+				+sp('main-speaker-5','romanets-main.png','Игорь Романец')
+			.main-speakers-row
+				+sp('main-speaker-6','rojkova-main.png','Татьяна Рожкова')
+				+sp('main-speaker-7','roleva-main.png','Анна Ролева')
+				+sp('main-speaker-8','yurina-main.png','Вероника Юрина')
+				+sp('main-speaker-9','grigoryevskaya-main.png','Анна Григорьевская')
+				+sp('main-speaker-10','vechernina-main.png','Лариса Вечернина')
