@@ -2,10 +2,11 @@ mixin day(cl,imgCl,src,h4,...items)
 	.col-md-4
 		.day(class=cl)
 			img.day-img(class=imgCl src=path+"img/icons/"+src, alt=h4)
-			h4.day-title=h4
-			ul.day-list
-				each item in items
-					li=item
+			.day-container
+				h4.day-title=h4
+				ul.day-list
+					each item in items
+						li=item
 
 section#plan
 	.container
@@ -24,12 +25,12 @@ section#plan
 		.about-wrapper
 			.about
 				.row
-					.col-md-4
+					.col-md-5
 						.about-img
 							img(src=path+"img/images/alex.png", alt="Александр Кудряшов")
 							.about-info
 								p Генеральный директор Mastervision Кудряшов Александр
-					.col-md-8
+					.col-md-7
 						h4.about-title Мастерская Академии Master Vision – это:
 						ul.about-list
 							li - Самое масштабное мероприятие, посвящённое личностному росту и самосовершенствованию;

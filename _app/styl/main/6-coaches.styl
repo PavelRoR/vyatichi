@@ -1,6 +1,71 @@
-.tab-content > .tab-pane {
+#coaches
+	padding: 90px 0
+	background-color: #FBFFFF
+	.container
+		position: relative
+.coaches-img
+	position: absolute
+	&-1
+		left -150px
+		bottom: -190px
+		z-index: 0
+	&-2
+		right 0
+		bottom: -80px
+		z-index: 0
+.coaches
+	position: relative
+	z-index: 30
+.coach-links-wrapper
+	position: absolute
+	padding: 3px
+	border-radius: 7px
+	background-color: #8d0b6b
+	border 1px solid #c5c3c3
+	width: 248px
+	top 0
+	left 0
+	z-index 30
+.coach-links
+	padding: 30px
+	border-radius: 7px
+	border 1px solid #fff
+	li
+		list-style: none
+		margin-bottom: 25px
+		&:last-child
+		a
+			color #fff
+			margin-bottom: 0
+			transition: all .3s ease
+			&:hover
+				color #ef2323
+		&.active
+			a
+				font-family: Md
+				font-weight: bold
+				color #ef2323
+.tab-content > .tab-pane
 	display: none;
-}
-.tab-content > .active {
+.tab-content > .active
 	display: block;
-}
+.coach
+	position relative
+	&-info
+		padding 30px 30px 30px 230px
+		margin-left: 45px
+		box-shadow: 0px 0px 15.66px 2.34px rgba(45, 45, 47, 0.11);
+		background-color #fff
+		width 100%
+		max-width 690px
+		z-index 20
+		min-height 600px
+		position relative
+		top 40px
+	&-img
+		position absolute
+		top 0
+		right 0
+		z-index 15
+		border-radius: 7px
+		box-shadow: 0px 0px 15.66px 2.34px rgba(45, 45, 47, 0.11);

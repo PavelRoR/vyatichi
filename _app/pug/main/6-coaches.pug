@@ -4,27 +4,28 @@ section#coaches
 		img(src=path+"img/icons/coaches.png", alt="Шары").coaches-img.coaches-img-2
 		+gt('','О тренерах')
 		.coaches
-			ul.nav.nav-tabs.coach-links(role="tablist")
-				li(role="presentation" class="active")
-					a(href="#coach-1" aria-controls="#coach-1" role="tab" data-toggle="tab") Жанна Абрамова
-				li(role="presentation")
-					a(href="#coach-2" aria-controls="#coach-2" role="tab" data-toggle="tab") Илья Исаков
-				li(role="presentation")
-					a(href="#coach-3" aria-controls="#coach-3" role="tab" data-toggle="tab") Кристина Граник
-				li(role="presentation")
-					a(href="#coach-4" aria-controls="#coach-4" role="tab" data-toggle="tab") Анна Скуцкая
-				li(role="presentation")
-					a(href="#coach-5" aria-controls="#coach-5" role="tab" data-toggle="tab") Игорь Романец
-				li(role="presentation")
-					a(href="#coach-6" aria-controls="#coach-6" role="tab" data-toggle="tab") Татьяна Рожкова
-				li(role="presentation")
-					a(href="#coach-7" aria-controls="#coach-7" role="tab" data-toggle="tab") Анна Ролева
-				li(role="presentation")
-					a(href="#coach-8" aria-controls="#coach-8" role="tab" data-toggle="tab") Вероника Юрина
-				li(role="presentation")
-					a(href="#coach-9" aria-controls="#coach-9" role="tab" data-toggle="tab") Анна Григорьевская
-				li(role="presentation")
-					a(href="#coach-10" aria-controls="#coach-10" role="tab" data-toggle="tab") Лариса Вечернина
+			.coach-links-wrapper
+				ul.nav.nav-tabs.coach-links(role="tablist")
+					li(role="presentation" class="active")
+						a(href="#coach-1" aria-controls="#coach-1" role="tab" data-toggle="tab") Жанна Абрамова
+					li(role="presentation")
+						a(href="#coach-2" aria-controls="#coach-2" role="tab" data-toggle="tab") Илья Исаков
+					li(role="presentation")
+						a(href="#coach-3" aria-controls="#coach-3" role="tab" data-toggle="tab") Кристина Граник
+					li(role="presentation")
+						a(href="#coach-4" aria-controls="#coach-4" role="tab" data-toggle="tab") Анна Скуцкая
+					li(role="presentation")
+						a(href="#coach-5" aria-controls="#coach-5" role="tab" data-toggle="tab") Игорь Романец
+					li(role="presentation")
+						a(href="#coach-6" aria-controls="#coach-6" role="tab" data-toggle="tab") Татьяна Рожкова
+					li(role="presentation")
+						a(href="#coach-7" aria-controls="#coach-7" role="tab" data-toggle="tab") Анна Ролева
+					li(role="presentation")
+						a(href="#coach-8" aria-controls="#coach-8" role="tab" data-toggle="tab") Вероника Юрина
+					li(role="presentation")
+						a(href="#coach-9" aria-controls="#coach-9" role="tab" data-toggle="tab") Анна Григорьевская
+					li(role="presentation")
+						a(href="#coach-10" aria-controls="#coach-10" role="tab" data-toggle="tab") Лариса Вечернина
 			.tab-content
 				.tab-pane.tab-pane.fade.in.active(role="tabpanel")#coach-1
 					.coach
