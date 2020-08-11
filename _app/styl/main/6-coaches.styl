@@ -22,7 +22,7 @@
 	border-radius: 7px
 	background-color: #8d0b6b
 	border 1px solid #c5c3c3
-	width: 248px
+	width: 255px
 	top 0
 	left 0
 	z-index 30
@@ -40,6 +40,8 @@
 			transition: all .3s ease
 			&:hover
 				color #ef2323
+				font-family: Md
+				font-weight: bold
 		&.active
 			a
 				font-family: Md
@@ -62,6 +64,17 @@
 		min-height 600px
 		position relative
 		top 40px
+		&-title
+			font-size: 18px
+			font-family: Md
+			font-weight: bold
+			margin-bottom: 30px
+		&-list
+			li
+				list-style: none
+				margin-bottom: 5px
+				&:last-child
+					margin-bottom: 0
 	&-img
 		position absolute
 		top 0
